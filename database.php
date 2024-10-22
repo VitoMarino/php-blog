@@ -1,4 +1,5 @@
 <?php
+// Connessione al database mysql
 $host = 'localhost';   // Indirizzo del server database
 $user = 'root';        // Nome utente
 $password = 'root';        // Password
@@ -11,5 +12,4 @@ $conn = new mysqli($host, $user, $password, $dbname);
 if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
 }
-echo "Connessione riuscita";
 ?>
